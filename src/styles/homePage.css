@@ -10,11 +10,13 @@
     border-radius: 5px;
     text-align: center; 
     width: 40%;
+    height: 80vh;
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    overflow: scroll;
 }
 
 .icon {
@@ -37,8 +39,22 @@
     align-items:center;
 }
 
-.carousel {
-    height: 30vh;
+.popularLand {
+    height: 35vh;
     width: 100%;
-    /* background-color: red; */
+    position: relative;
+}
+
+.advertise {
+    height: 15vh;
+}
+
+.advertise img {
+    width: 80%; 
+    height: 90%;
+}
+
+.specialLand {
+    height: 25vh;
+    width: 100%;
 }

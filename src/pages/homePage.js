@@ -9,6 +9,7 @@ import paperLane from "../assets/paper-plane.png";
 import users from "../assets/users.png";
 import gamepad from "../assets/gamepad.png";
 import Carousel from "better-react-carousel";
+import Item from "../components/ItemCarousel";
 
 function Home() {
   return (
@@ -54,6 +55,7 @@ function Home() {
             ></img>
           </div>
         </div>
+
         <div className='character'>
           <img src={game} style={{ widtd: "150px", height: "150px" }}></img>
           <div className='action'>
@@ -112,7 +114,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className='carousel'>
+
+        <div className='popularLand'>
           <label
             style={{
               fontWeight: "bold",
@@ -133,22 +136,55 @@ function Home() {
           ></span>
           <Carousel cols={2} rows={1} gap={10} loop>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=1' />
+              <Item></Item>
             </Carousel.Item>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=2' />
+              <Item></Item>
             </Carousel.Item>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=3' />
+              <Item></Item>
             </Carousel.Item>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=2' />
+              <Item></Item>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+
+        <div className='advertise'>
+          <img src='https://picsum.photos/800/600?random=2' />
+        </div>
+
+        <div className='specialLand'>
+          <label
+            style={{
+              fontWeight: "bold",
+              float: "left",
+              marginLeft: "20px",
+              marginTop: "10px",
+            }}
+          >
+            Special land
+          </label>
+          <br></br>
+          <span
+            style={{
+              display: "block",
+              //   margin: "100px 0",
+              marginBottom: "1em",
+            }}
+          ></span>
+          <Carousel cols={2} rows={1} gap={10} loop>
+            <Carousel.Item>
+              <Item></Item>
             </Carousel.Item>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=3' />
+              <Item></Item>
             </Carousel.Item>
             <Carousel.Item>
-              <img width='80%' src='https://picsum.photos/800/600?random=3' />
+              <Item></Item>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Item></Item>
             </Carousel.Item>
           </Carousel>
         </div>
